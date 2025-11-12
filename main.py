@@ -21,8 +21,11 @@ def main():
     if len(sys.argv) != 2:
         print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
+    
+    # path is provided as first argument
     book_path = sys.argv[1]
-    print(f"Reading book from {book_path}...")
+    print(f"Reading book from {book_path}...\n")
+    
     book_text = get_book_text(book_path)
 
     word_count = get_book_words(book_text)
